@@ -1,5 +1,5 @@
 ## Summary
-This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to Slack.
+This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to [Slack](https://slack.com).
 ## Installation
 * Download the zip file
 * Unzip the file
@@ -19,7 +19,7 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
   * Enter this in the WebHook Token field
   
 ####Slack Token
-  * Go to: https://api.slack.com/web
+  * Go [here](https://api.slack.com/web)
   * Under Authentication there should be a team Token
   * Enter this in the Slack Token field
   
