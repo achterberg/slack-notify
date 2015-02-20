@@ -32,10 +32,11 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 ###Configure Notifications
   * The plugin will show under Type: Notification Actions under Actions as Slack Notify.
   * Once added to a TRIGGER, SCHEDULE or ACTION GROUPS, click on Edit Action Settings...
+  * ... wait a second or two ...
   * The Channel drop down menu should be auto populated with channels in your team; select one.
   * Alternately send a [Direct Message](https://slack.zendesk.com/hc/en-us/articles/202009646-Using-channel-group-everyone) by entering text in the Direct Message field.
-  * Enter text in the Text field, following the formatting hints listed below the field.
+  * Enter the message text in the Text field, following the formatting hints listed below the field. Note that formatting for Indigo and Slack is outlined.
   * Optional: Enter a username to be posted as. If blank, the plugin will use your username and post as a bot.
-  * Optional: Enter an icon name to be posted with the message. This can be the built-in Slack icons or you can use [custom icon names](https://my.slack.com/customize/emoji).
+  * Optional: Enter a name of an icon to be posted with the message. This can be one of the built-in Slack icons or use [custom icon names](https://my.slack.com/customize/emoji). If nothing is entered the default is a Slack icon.
   * Optional: Enter the URL to a publically sharable URL for an image file that will be displayed inside a message attachment. Slack currently supports the following formats: GIF, JPEG, PNG, and BMP.
   * Optional: Enter the file path to a local file to upload to Slack.
