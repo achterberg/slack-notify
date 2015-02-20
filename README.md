@@ -1,17 +1,21 @@
 ## Summary
 This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to [Slack](https://slack.com).
+## Requirements
+* [Indigo 6](http://www.indigodomo.com/index.html) or later (pro version only)
+* A Slack Team is required. Register for an account at [Slack](https://slack.com) and set up a team
+* Optional: Create a Slack channel to be used for Slack Notify (recommended), or use one of the defaults
+
 ## Installation
 * Download the zip file (over there --->)
 * Unzip the file if it doesn't automatically unzip
-* On the computer with Indigo running, double-click the file "Slack.indigoPlugin" inside the folder created above
+* On the computer running Indigo, double-click the file "Slack.indigoPlugin"
 * Follow the Indigo dialog and enable the plugin
 * The plugin should be visible in the Plugins drop-down menu as "Slack Notify"
+* Indigo help for the [installation process](http://wiki.indigodomo.com/doku.php?id=indigo_6_documentation:getting_started)
 
 ## Configuration
 ###Configure Plugin
 In the menu: Indigo 6/Plugins/Slack Notify/Configure...
-  * A Slack Team is required. Register for an account at [Slack](https://slack.com) and set up a team
-  * Optional: Create a channel to be used for Slack Notify (recommended), or use one of the defaults
   
 ####WebHook Token
   * Set up an incoming webhook integration by reading and following the link on: https://api.slack.com/incoming-webhooks
@@ -40,3 +44,6 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
   * Optional: Enter a name of an icon to be posted with the message. This can be one of the built-in Slack icons or use [custom icon names](https://my.slack.com/customize/emoji). If nothing is entered the default is a Slack icon.
   * Optional: Enter the URL to a publically sharable URL for an image file that will be displayed inside a message attachment. Slack currently supports the following formats: GIF, JPEG, PNG, and BMP.
   * Optional: Enter the file path to a local file to upload to Slack.
+
+## Dependencies
+* Indigo plugins (the IOM and SDK) use Python 2.5
