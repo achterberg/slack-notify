@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<Actions>
+    <SupportURL></SupportURL>
+    <Action id="notify" uiPath="NotificationActions">
+        <Name>Slack Notify</Name>
+        <CallbackMethod>notify</CallbackMethod>
+        <ConfigUI>
+
+            <Field id="channel" type="menu">
+                <Label>Channel:</Label>
+                <List class="self" method="channelListGenerator"/>
+            </Field>
+
+            <Field id="directMessage"
+                    type="textfield"
+                    defaultValue=""
+                    tooltip = "Direct Message with @username, @channel, @group or @everyone.">
+                <Label>Direct Message:</Label>
+            </Field>
+
+            <Field id="label01"
+                    type = "label"
+                    alignText="center"
+                    fontSize = "small">
+                <Label>Required: Select a channel from the list above OR Direct Message</Label>
+            </Field>
+
+            <Field id="sep1"
+                    type="separator" />
+
+            <Field id="username"
+                    type="textfield"
+                    defaultValue="slack"
+                    tooltip = "Enter a name to post as WITHOUT a preceeding @.">
+                <Label>Name:</Label>
+            </Field>
+
+            <Field id="label02"
+                    type = "label"
+                    alignText="center"
+                    fontSize = "small">
+                <Label>Optional, defaults to your username and posted as a bot</Label>
+            </Field>
+
+            <Field id="sep2"
+                    type="separator" />
+
+            <Field id="text"
+                    type="textfield"
+                    tooltip = "Enter the text to send.">
+                <Label>Text:</Label>
+            </Field>
+
+            <Field id="label03"
+                    type="label"
+                    alignText="center"
+                    fontSize="small" fontColor="blue">
+                <Label>The following formatting can be inserted in the Text field above</Label>
+            </Field>
+
+            <Field id="label04"
+                    type="label"
+                    fontSize="small"
+                    fontColor="black">
+                <Label>    &#8226; Insert indigo variable values %%v:VARIABLEID%%
+    &#8226; Insert indigo device state values %%d:DEVICEID:STATEKEY%%
+    &#8226; For text with newline: This is a line of text.\nAnd this is another one
+    &#8226; Enclose an URL in angle brackets to create a link: &lt;https://slack.com&gt;
+    &#8226; To display hyperlinked text instead of an actual URL, use the pipe character:
+        &lt;https://alert-system.com/alerts/1234|Click here&gt; for details!
+    &#8226; Surround text for *bold* `code` _italic_ ```block_quote```
+    &#8226; Place &gt; at the beginning of a line to indent text as a blockquote
+    &#8226; Add emoticons :smile:</Label>
+            </Field>
+
+            <Field id="sep3"
+                    type="separator" />
+
+            <Field id="icon"
+                    type="textfield"
+                    defaultValue="ghost"
+                    tooltip = "Enter an icon name, WITHOUT enclosing colons.">
+                <Label>Icon:</Label>
+            </Field>
+
+            <Field id="label05"
+                    type = "label"
+                    alignText="center"
+                    fontSize = "small">
+                <Label>Optional: Defaults to Slack icon</Label>
+            </Field>
+
+            <Field id="sep4"
+                    type="separator" />
+
+            <Field id="imageurl"
+                    type="textfield"
+                    defaultValue=""
+                    tooltip = "Enter a valid URL to an image file to attach to the message.">
+                <Label>Image:</Label>
+            </Field>
+
+            <Field id="label06"
+                    type = "label"
+                    alignText="center"
+                    fontSize = "small">
+                <Label>Optional: Currently supports the formats: GIF, JPEG, PNG, and BMP</Label>
+            </Field>
+
+            <Field id="sep5"
+                    type="separator" />
+
+            <Field id="filename"
+                    type="textfield"
+                    defaultValue=""
+                    tooltip = "Enter a valid path to a file to upload to Slack.">
+                <Label>File:</Label>
+            </Field>
+
+            <Field id="label07"
+                    type = "label"
+                    alignText="center"
+                    fontSize = "small">
+                <Label>Optional: Enter the path to a file
+                ex: /Library/Application Support/Perceptive Automation/Indigo 6/Logs/indigo_log.txt</Label>
+            </Field>
+
+        </ConfigUI>
+    </Action>
+</Actions>
