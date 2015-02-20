@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<PluginConfig>
+	<SupportURL></SupportURL>
+
+	<Field
+	    id="title"
+	    type="label"
+	    alignText="center"
+	    fontColor="blue"
+	    fontSize = "small">
+		<Label>Enter the information below from your Slack configuration</Label>
+	</Field>
+
+	<Field
+	    id="urltoken"
+	    type="textfield"
+	    defaultValue=""
+	    tooltip = "Enter the Slack Webhook URL Token (required).">
+		<Label>WebHook Token:</Label>
+	</Field>
+
+	<Field
+		id = "label01"
+		type = "label"
+		alignText="center"
+		fontSize = "small">
+		<Label>ONLY enter the part of the URL after https://hooks.slack.com/services/</Label>
+	</Field>
+
+    <Field
+    id = "separator01"
+    type = "separator"/>
+
+	<Field
+	    id="slacktoken"
+	    type="textfield"
+	    defaultValue=""
+	    tooltip = "Enter the Slack Token (required).">
+		<Label>Slack Token:</Label>
+	</Field>
+
+	<Field
+		id = "label02"
+		type = "label"
+		alignText="center"
+		fontSize = "small">
+		<Label>Enter the Slack token</Label>
+	</Field>
+
+    <Field
+    id = "separator02"
+    type = "separator"/>
+
+	<Field
+	    id="userid"
+	    type="textfield"
+	    defaultValue=""
+	    tooltip = "Enter the user ID.">
+		<Label>User ID:</Label>
+	</Field>
+
+	<Field
+		id = "label03"
+		type = "label"
+		alignText="center"
+		fontSize = "small">
+		<Label>Enter the ID of the user</Label>
+	</Field>
+
+	<Field
+		id = "showDebugInfo"
+		type = "checkbox"
+		tooltip = "Enabling will result in debug logging. Turn on debugging only when needed.">
+		<Label>Debug Mode</Label>
+	</Field>
+
+	<Field
+		id = "showInstructions"
+		type = "checkbox"
+		tooltip = "Enabling will print setup instructions to the Event Log (⌘8). Turn on only when needed">
+		<Label>Setup Instructions</Label>
+		<Description>Print setup instructions to log</Description>
+	</Field>
+
+</PluginConfig>
