@@ -1,8 +1,8 @@
 ## Summary
 This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to [Slack](https://slack.com).
 ## Installation
-* Download the zip file
-* Unzip the file
+* Download the zip file (over there --->)
+* Unzip the file if it doesn't automatically unzip
 * On the computer with Indigo running, double-click the file "Slack.indigoPlugin" inside the folder created above
 * Follow the Indigo dialog and enable the plugin
 * The plugin should be visible in the Plugins drop-down menu as "Slack Notify"
