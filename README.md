@@ -10,7 +10,7 @@ This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send mess
 ## Configuration
 ###Configure Plugin
 In the menu: Indigo 6/Plugins/Slack Notify/Configure...
-  * A Slack Team is required. Register for an account at slack.com and set up a team
+  * A Slack Team is required. Register for an account at [Slack](https://slack.com) and set up a team
   * Optional: Create a channel to be used for Slack Notify (recommended), or use one of the defaults
   
 ####WebHook Token
