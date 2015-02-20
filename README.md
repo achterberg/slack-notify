@@ -1,5 +1,5 @@
 ## Summary
-This plugin extends Indigo allowing it to send messages and attachments to Slack.
+This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to Slack.
 ## Installation
 * Download the zip file
 * Unzip the file
