@@ -1,0 +1,5 @@
+Borrowed code or inspiration:
+
+* [Indigo Backup])http://www.schollnick.net/wordpress/home-automation/backing-up-your-indigo-configuration/)
+* [indigo-pushover](https://github.com/IndigoDomotics/indigo-pushover)
+* [WUnderground Plugin](http://www.indigodomo.com/library/282/)
