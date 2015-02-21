@@ -49,6 +49,7 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 * The plugin uses the Slack incoming webhook integration [API](https://api.slack.com/incoming-webhooks).
 * The plugin uses an URL shortener to shorten the image URL. The script runs through several shortener websites to do this, but bit.ly requires an access token to work. The file plugin.py needs to edited to include your token if you want to use that service.
 * The plugin will attempt to get your user information from Slack to fill in the channels available in your team and to retrieve your username. Turning on debugging mode will expose your Slack user credentials (including ID, username, user icon, user color, real name, status and email address) in the Indigo log.
+* The plugin will attempt to get your [gravatar](http://gravatar.com) using your Slack email address if a Slack icon does not exist.
 
 ## Dependencies
 Indigo plugins (the IOM and SDK) use Python 2.5
