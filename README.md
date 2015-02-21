@@ -55,7 +55,7 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 Indigo plugins (the IOM and SDK) use Python 2.5
 
 ## Plugin ID
-To programmatically restart the plugin, the Plugin ID is: com.bot.indigoplugin.Slack.indigoPlugin
+To programmatically restart the plugin, the Plugin ID is: com.bot.indigoplugin.slack
 
 ## Uninstall
 Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or the Disabled Plugins folder if disabled) and restart the Indigo Server
