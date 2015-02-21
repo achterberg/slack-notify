@@ -58,7 +58,7 @@ Indigo plugins (the IOM and SDK) use Python 2.5
 To programmatically restart the plugin, the Plugin ID is: com.bot.indigoplugin.slack
 
 ## Uninstall
-Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or the Disabled Plugins folder if disabled) and restart the Indigo Server
+Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or check in the Disabled Plugins folder if disabled) and restart the Indigo Server
 
 ## GitHub Gist
 For a simple python script version: [indigotoslack](https://gist.github.com/achterberg/cbd46bc3b9cdb391eed7)
