@@ -1,6 +1,8 @@
 Borrowed code or inspiration:
 
 * [Indigo Backup])http://www.schollnick.net/wordpress/home-automation/backing-up-your-indigo-configuration/)
-* [Indigo Server Plugin Tutorial](http://wiki.indigodomo.com/doku.php?id=indigo_6_documentation:plugin_extending_tutorial)
 * [indigo-pushover](https://github.com/IndigoDomotics/indigo-pushover)
+* [Indigo Server Plugin Tutorial](http://wiki.indigodomo.com/doku.php?id=indigo_6_documentation:plugin_extending_tutorial)
+* [URL shortener code](http://taoofmac.com/space/blog/2009/08/10/2205)
+* [URL upload encoder](http://peerit.blogspot.com/2007/07/multipartposthandler-doesnt-work-for.html)
 * [WUnderground Plugin](http://www.indigodomo.com/library/282/)
