@@ -6,12 +6,12 @@ This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send mess
 * Optional: Create a Slack channel to be used for Slack Notify (recommended), or use one of the defaults
 
 ## Installation
-* Download the zip file (look over there --->)
+* Download the ZIP file (look over there --->)
 * Unzip the file if it doesn't automatically unzip
 * On the computer running Indigo, double-click the file "Slack.indigoPlugin"
 * Follow the Indigo dialog and enable the plugin
 * The plugin should be visible in the Plugins drop-down menu as "Slack Notify"
-* Indigo help for the [installation process](http://wiki.indigodomo.com/doku.php?id=indigo_6_documentation:getting_started)
+* Trouble?: Indigo help for the [installation process](http://wiki.indigodomo.com/doku.php?id=indigo_6_documentation:getting_started)
 
 ## Configuration
 ###Configure Plugin
@@ -20,12 +20,12 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 ####WebHook Token
   * Set up an incoming webhook integration by reading and following the link on: https://api.slack.com/incoming-webhooks
   * An URL should be generated and after services/ the series of numbers/letters is the token
-  * Enter this in the WebHook Token field
+  * Enter the above in the WebHook Token field
   
 ####Slack Token
   * Go [here](https://api.slack.com/web)
   * Under Authentication there should be a team Token
-  * Enter this in the Slack Token field
+  * Enter the above in the Slack Token field
   
 ####User ID
   * Go to the following link, replacing the part after = with the slack token above
@@ -36,7 +36,7 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 ###Configure Notifications
   * The plugin will show under Type: Notification Actions under Actions as Slack Notify.
   * Once added to a TRIGGER, SCHEDULE or ACTION GROUPS, click on Edit Action Settings...
-  * ... wait a second or two ...
+  * ... wait a second or two ... or three
   * The Channel drop down menu should be auto populated with channels in your team; select one.
   * Alternately send a [Direct Message](https://slack.zendesk.com/hc/en-us/articles/202009646-Using-channel-group-everyone) by entering text in the Direct Message field.
   * Enter the message text in the Text field, following the formatting hints listed below the field. Formatting for Indigo and Slack is outlined.
@@ -44,6 +44,11 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
   * Optional: Enter a name of an icon to be posted with the message. This can be one of the built-in Slack icons or use [custom icon names](https://my.slack.com/customize/emoji). If nothing is entered the default is a Slack icon.
   * Optional: Enter the URL to a publically sharable URL for an image file that will be displayed inside a message attachment. Slack currently supports the following formats: GIF, JPEG, PNG, and BMP.
   * Optional: Enter the file path to a local file to upload to Slack.
+
+## Back-end info
+* The plugin uses the Slack incoming webhook integration [API](https://api.slack.com/incoming-webhooks).
+* The plugin uses an URL shortener to shorten the image URL. The script runs through several shortener websites to do this, but bit.ly requires an access token to work. The file plugin.py needs to edited to include your token if you want to use that service.
+* The plugin will attempt to get your user information from Slack to fill in the channels available in your team and to retrieve your username. Turning on debugging mode will expose your Slack user credentials (including ID, username, user icon, user color, real name, status and email address) in the Indigo log.
 
 ## Dependencies
 Indigo plugins (the IOM and SDK) use Python 2.5
