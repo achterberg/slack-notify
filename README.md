@@ -1,5 +1,5 @@
 ## Summary
-This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages and attachments to [Slack](https://slack.com).
+This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send messages to [Slack](https://slack.com), optionally with attachments and file upload.
 ## Requirements
 * [Indigo 6](http://www.indigodomo.com/index.html) or later (pro version only)
 * A Slack Team is required. Register for an account at [Slack](https://slack.com) and set up a team
@@ -47,3 +47,6 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 
 ## Dependencies
 * Indigo plugins (the IOM and SDK) use Python 2.5
+
+## Uninstall
+* Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or the Disabled Plugins folder if disabled) and restart the Indigo Server.
