@@ -6,7 +6,7 @@ This plugin extends [Indigo](http://www.indigodomo.com) allowing it to send mess
 * Optional: Create a Slack channel to be used for Slack Notify (recommended), or use one of the defaults
 
 ## Installation
-* Download the zip file (over there --->)
+* Download the zip file (look over there --->)
 * Unzip the file if it doesn't automatically unzip
 * On the computer running Indigo, double-click the file "Slack.indigoPlugin"
 * Follow the Indigo dialog and enable the plugin
@@ -30,8 +30,8 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
 ####User ID
   * Go to the following link, replacing the part after = with the slack token above
   * https://slack.com/api/users.list?token=replacewithSlackToken
-  * Look for the line begining with: "id":
-  * Enter this in the User ID field
+  * Look for the series of letter/numbers after the line beginning with: "id":
+  * Enter the above in the User ID field
   
 ###Configure Notifications
   * The plugin will show under Type: Notification Actions under Actions as Slack Notify.
@@ -39,17 +39,20 @@ In the menu: Indigo 6/Plugins/Slack Notify/Configure...
   * ... wait a second or two ...
   * The Channel drop down menu should be auto populated with channels in your team; select one.
   * Alternately send a [Direct Message](https://slack.zendesk.com/hc/en-us/articles/202009646-Using-channel-group-everyone) by entering text in the Direct Message field.
-  * Enter the message text in the Text field, following the formatting hints listed below the field. Note that formatting for Indigo and Slack is outlined.
+  * Enter the message text in the Text field, following the formatting hints listed below the field. Formatting for Indigo and Slack is outlined.
   * Optional: Enter a username to be posted as. If blank, the plugin will use your username and post as a bot.
   * Optional: Enter a name of an icon to be posted with the message. This can be one of the built-in Slack icons or use [custom icon names](https://my.slack.com/customize/emoji). If nothing is entered the default is a Slack icon.
   * Optional: Enter the URL to a publically sharable URL for an image file that will be displayed inside a message attachment. Slack currently supports the following formats: GIF, JPEG, PNG, and BMP.
   * Optional: Enter the file path to a local file to upload to Slack.
 
 ## Dependencies
-* Indigo plugins (the IOM and SDK) use Python 2.5
+Indigo plugins (the IOM and SDK) use Python 2.5
+
+## Plugin ID
+To programmatically restart the plugin, the Plugin ID is: com.bot.indigoplugin.Slack.indigoPlugin
 
 ## Uninstall
-* Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or the Disabled Plugins folder if disabled) and restart the Indigo Server.
+Remove “/Library/Application Support/Perceptive Automation/Indigo 6/Plugins/Slack.indigoPlugin” (or the Disabled Plugins folder if disabled) and restart the Indigo Server
 
 ## GitHub Gist
-* For a simple python script version: [indigotoslack](https://gist.github.com/achterberg/cbd46bc3b9cdb391eed7)
+For a simple python script version: [indigotoslack](https://gist.github.com/achterberg/cbd46bc3b9cdb391eed7)
