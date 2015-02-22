@@ -42,7 +42,7 @@ class Plugin(indigo.PluginBase):
         # BITLY_TOKEN = 'addtoken'
         services = {
         # 'api-ssl.bitly': '/v3/shorten?access_token=%s&longUrl=' % BITLY_TOKEN,
-        'api.tr.im':   '/api/trim_simple?url=',
+        # 'api.tr.im':   '/api/trim_simple?url=',
         'tinyurl.com': '/api-create.php?url=',
         'is.gd':       '/api.php?longurl='
         }
