@@ -74,12 +74,4 @@
 		<Label>Debug Mode</Label>
 	</Field>
 
-	<Field
-		id = "showInstructions"
-		type = "checkbox"
-		tooltip = "Enabling will print setup instructions to the Event Log (⌘8). Turn on only when needed">
-		<Label>Setup Instructions</Label>
-		<Description>Print setup instructions to log</Description>
-	</Field>
-
 </PluginConfig>
